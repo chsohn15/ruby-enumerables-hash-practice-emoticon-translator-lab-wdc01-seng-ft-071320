@@ -3,7 +3,8 @@ require 'pry'
 
 def load_library(file)
   emoticons = YAML.load_file(file)
-  emoticons.each_with_object({}) do |(key,value), final_array|
+  final_hash = emoticons.each_with_object({}) do |(key,value), final_array|
+    
   binding.pry
 end
 
