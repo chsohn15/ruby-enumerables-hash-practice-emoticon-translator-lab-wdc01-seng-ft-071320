@@ -16,7 +16,7 @@ def get_japanese_emoticon(file, emoji)
   end
 emoticons
 
-emoticons.each do |(k, v)|
+emoticons.each_with object({}) do |(k, v), final_array|
   if emoticons[k][v] = emoji
     n = k
   end
