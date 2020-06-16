@@ -20,8 +20,9 @@ emoticons.each do |(k, v)|
   if emoticons[k][v] = emoji
     n = k
   end
+  emoticons[n][:japanese]
 end
-emoticons[n][:japanese]
+
 end
 
 def get_english_meaning
