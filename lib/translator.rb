@@ -16,7 +16,8 @@ emoji_hash = load_library(file1)
 emoji_hash.each do |(k, v)|
   if emoji_hash[k][:english] == emoji
     n = k
-    return emoji_hash[n][:japanese]
+    japanese_value = emoji_hash[n][:japanese]
+    binding.pry
   end
     return "Sorry, that emoticon was not found"
 end
