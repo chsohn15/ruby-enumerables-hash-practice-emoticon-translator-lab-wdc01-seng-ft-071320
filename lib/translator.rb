@@ -17,8 +17,8 @@ emoji_hash.each do |(k, v)|
   if emoji_hash[k][:english] == emoji
     n = k
     japanese_value = emoji_hash[n][:japanese]
+    return japanese_value
   end
-  return japanese_value
 end
 return "Sorry, that emoticon was not found"
 end
