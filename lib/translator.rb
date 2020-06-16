@@ -14,7 +14,7 @@ def get_japanese_emoticon(file, emoji)
   emoticons.each_with_object({}) do |(key,value), final_array|
     emoticons[key] = {:english => value[0], :japanese => value[1]}
   end
-emoticons
+emoticons.key(emoji)
 
   binding.pry
   
