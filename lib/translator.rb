@@ -16,9 +16,9 @@ def get_japanese_emoticon(file, emoji)
   end
 emoticons
 
-emoticons.each do |(key, value)|
-  if emoticons[key][value] = emoji
-    n = key
+emoticons.each do |(k, v)|
+  if emoticons[k][v] = emoji
+    n = k
   end
   binding.pry
 end
