@@ -22,6 +22,7 @@ emoticons.each_with object({}) do |(k, v), final_array|
   end
   binding.pry
 end
+end
 
 def get_english_meaning
   # code goes here
