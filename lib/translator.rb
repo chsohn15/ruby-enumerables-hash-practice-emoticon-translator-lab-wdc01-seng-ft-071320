@@ -21,4 +21,3 @@ def get_english_meaning
   # code goes here
 end
 
-hash = Hash[array.collect { |item| [item, item.upcase] } ]
