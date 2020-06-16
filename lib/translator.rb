@@ -5,7 +5,7 @@ def load_library(file)
   emoticons = YAML.load_file(file)
   final_hash = emoticons.each_with_object({}) do |(key,value), final_array|
     value.each do |emojis|
-      hash = Hash[array.collect {|emojis| [:english, emojis]}]
+      hash = Hash[value.collect {|emojis| [:english, emojis]}]
       
     end
   binding.pry
