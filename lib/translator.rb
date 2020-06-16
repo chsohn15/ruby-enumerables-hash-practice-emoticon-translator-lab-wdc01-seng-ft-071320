@@ -19,9 +19,8 @@ emoji_hash.each do |(k, v)|
     japanese_value = emoji_hash[n][:japanese]
     binding.pry
   end
-    return "Sorry, that emoticon was not found"
 end
-
+return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
