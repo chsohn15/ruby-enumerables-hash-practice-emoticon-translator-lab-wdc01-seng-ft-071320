@@ -23,7 +23,7 @@ end
 return "Sorry, that emoticon was not found"
 end
 
-def get_english_meaning
+def get_english_meaning(file1, emoji)
 emoji_hash = load_library(file1)
 
 
