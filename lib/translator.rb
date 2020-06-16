@@ -14,7 +14,7 @@ emoji_hash = load_library(file1)
 
 
 emoji_hash.each do |(k, v)|
-  if emoji_hash[k][value] == emoji
+  if emoji_hash[k][v] == emoji
     n = k
     return emoji_hash[n][:japanese]
   else 
