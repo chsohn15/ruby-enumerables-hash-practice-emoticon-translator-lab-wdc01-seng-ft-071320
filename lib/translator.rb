@@ -6,7 +6,6 @@ def load_library(file)
   final_hash = emoticons.each_with_object({}) do |(key,value), final_array|
     value.each do |language, emojis|
       {:english => emojis
-      :japanese => emojis
       }
     end
   binding.pry
