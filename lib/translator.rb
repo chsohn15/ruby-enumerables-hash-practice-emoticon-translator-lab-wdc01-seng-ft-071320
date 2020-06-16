@@ -24,6 +24,16 @@ return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
-  # code goes here
+emoji_hash = load_library(file1)
+
+
+emoji_hash.each do |(k, v)|
+  if emoji_hash[k][:japanese] == emoji
+    n = k
+    english_value = emoji_hash[n][:english]
+    return english_value
+  end
+end
+return "Sorry, that emoticon was not found"
 end
 
