@@ -11,7 +11,8 @@ end
 
 def get_japanese_emoticon(file, emoji)
   load_library(file)
-  emoticons.has_value?(emoji)
+  emoticons.key(emoji)
+  binding.pry
   
 end
 
