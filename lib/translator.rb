@@ -15,7 +15,7 @@ def get_japanese_emoticon(file, emoji)
     emoticons[key] = {:english => value[0], :japanese => value[1]}
   end
 emoticons
-emoticons.value_included?(emoji)
+#emoticons.value_included?(emoji)
   binding.pry
 end
 
