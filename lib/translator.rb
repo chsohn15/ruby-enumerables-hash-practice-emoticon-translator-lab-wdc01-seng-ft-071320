@@ -19,8 +19,8 @@ emoticons
 emoticons.each do |(k, v)|
   if emoticons[k][v] = emoji
     n = k
+    return emoticons[n][:japanese]
   end
-  emoticons[n][:japanese]
 end
 
 end
