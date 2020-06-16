@@ -15,10 +15,12 @@ def get_japanese_emoticon(file, emoji)
     emoticons[key] = {:english => value[0], :japanese => value[1]}
   end
 emoticons
+
 emoticons.each do |(key, value)|
-if emoticons[key][value] = emoji
-  n = key
-  puts key
+  if emoticons[key][value] = emoji
+    n = key
+    puts key
+  end
   binding.pry
 end
 
