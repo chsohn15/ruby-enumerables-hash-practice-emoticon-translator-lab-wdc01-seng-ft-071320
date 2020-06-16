@@ -10,7 +10,7 @@ emoticons
 end
 
 def get_japanese_emoticon(file1, emoji)
-load_library(file1)
+emoji_hash = load_library(file1)
 binding.pry
 emoticons.each do |(k, v)|
   if emoticons[k][:english] = emoji
