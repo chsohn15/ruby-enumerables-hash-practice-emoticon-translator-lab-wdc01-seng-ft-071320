@@ -19,6 +19,8 @@ emoticons.each do |(k, v)|
   if emoticons[k][v] = emoji
     n = k
     return emoticons[n][:japanese]
+  else 
+    return "Sorry, that emoticon was not found"
   end
 end
 
