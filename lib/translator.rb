@@ -5,10 +5,8 @@ def load_library(file)
   emoticons = YAML.load_file(file)
   final_hash = emoticons.each_with_object({}) do |(key,value), final_array|
     key => {:english => value[0], :japanese => value[1]}
-    end
-  binding.pry
   end
-  
+    binding.pry
 end
 
 def get_japanese_emoticon
