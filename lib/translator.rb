@@ -4,6 +4,9 @@ require 'pry'
 def load_library(file)
   emoticons = YAML.load_file(file)
   final_hash = emoticons.each_with_object({}) do |(key,value), final_array|
+    key = {}
+    {} << :english 
+    {} << :japanese
     value.each do |emojis|
       hash = Hash[value.collect {|emojis| [" ", emojis]}]
       
