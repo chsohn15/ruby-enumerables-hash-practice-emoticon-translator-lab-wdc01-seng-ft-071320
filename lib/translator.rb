@@ -16,7 +16,7 @@ def get_japanese_emoticon(file, emoji)
   end
 
 emoticons.each do |(k, v)|
-  if emoticons[k][v] = emoji
+  if emoticons[k][:english] = emoji
     n = k
     return emoticons[n][:japanese]
   else 
