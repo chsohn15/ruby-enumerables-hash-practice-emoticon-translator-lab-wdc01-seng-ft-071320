@@ -6,7 +6,7 @@ def load_library(file)
   final_hash = emoticons.each_with_object({}) do |(key,value), final_array|
     emoticons[key] = {:english => value[0], :japanese => value[1]}
   end
-emoticons
+final_hash
 end
 
 def get_japanese_emoticon
