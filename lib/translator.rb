@@ -19,7 +19,6 @@ emoticons
 emoticons.each do |(key, value)|
   if emoticons[key][value] = emoji
     n = key
-    puts key
   end
   binding.pry
 end
